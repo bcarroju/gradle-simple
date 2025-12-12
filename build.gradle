@@ -1,5 +1,5 @@
 plugins {
-    id "org.sonarqube" version "5.1.0.4882"  // ← Updated to 5.x for Gradle 9 compatibility
+    id "org.sonarqube" version "6.0.1.5171"  // ← Latest version as of Dec 2024
     id "java"
     id "maven-publish"
 }
@@ -22,8 +22,7 @@ sonarqube {
         property "sonar.projectKey", "demo"
         property "sonar.projectName", "demo"
         property "sonar.host.url", "http://localhost:9000"
-        property "sonar.token", "sqa_9510886a196b6c7b41d91d0056760a748b83f138"  // ← Changed from 'login' to 'token'
-        property "sonar.gradle.skipCompile", "true"  // ← Suppress deprecation warning
+        property "sonar.token", "sqa_9510886a196b6c7b41d91d0056760a748b83f138"
     }
 }
 
