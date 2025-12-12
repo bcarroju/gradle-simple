@@ -1,6 +1,7 @@
 plugins {
-    id 'java'
-    id 'maven-publish'
+    id "org.sonarqube" version "4.4.1.3373"
+    id "java"
+    id "maven-publish"
 }
 
 group = 'com.github.jitpack'
@@ -13,6 +14,16 @@ java {
 
 repositories {
     mavenCentral()
+    gradlePluginPortal()
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "demo"
+        property "sonar.projectName", "demo"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.login", "sqa_9510886a196b6c7b41d91d0056760a748b83f138"
+    }
 }
 
 dependencies {
