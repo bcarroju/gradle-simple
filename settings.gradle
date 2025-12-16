@@ -1,0 +1,7 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()  // Mandatory for plugins like org.sonarqube
+        mavenCentral()
+        google()
+    }
+}

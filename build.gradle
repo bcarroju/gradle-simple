@@ -38,6 +38,12 @@ publishing {
     }
 }
 
+tasks.jar {
+    manifest {
+        attributes["Main-Class"] = "Hello"
+    }
+}
+
 wrapper {
     gradleVersion = "8.10.2"  // ← Changed from 9.2.1 to 8.10.2
     distributionType = Wrapper.DistributionType.ALL
