@@ -4,7 +4,7 @@ FROM registry.access.redhat.com/ubi9/openjdk-21-runtime
 WORKDIR /app
 
 # Copy your application JAR file into the container
-COPY build/libs/gradle-simple-Job-2.0.jar /app/My-Real-Pipeline-01-2.0.jar
+COPY build/libs/My-Real-Pipeline-01-2.0.jar /app/My-Real-Pipeline-01-2.0.jar
 
 
 
