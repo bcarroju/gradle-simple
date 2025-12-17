@@ -1,0 +1,6 @@
+apiVersion: v2
+name: mychart
+description: A basic Helm chart to deploy a Docker image
+version: 0.1.0
+appVersion: "1.0.0"
+
