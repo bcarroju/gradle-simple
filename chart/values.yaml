@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: bcarroju.jfrog.io/docker-local/gradle-sample-app
+  repository: bcarroju.jfrog.io/docker-local/gradle-sample-app:72
   tag: latest
   pullPolicy: IfNotPresent
 
